@@ -16,5 +16,11 @@ def create_app(config_name):
     @app.cli.command("mycommand")
     def mycommand():
         print("这是用来自定义命令的!")
+    
+    @app.cli.command("shell", help="Run the interactive shell")
+    def shell():
+        import code
+        code.interact(local=globals())
+
 
     return app

@@ -10,3 +10,6 @@ run:
 
 mycommand:
 	flask --app  manage mycommand
+
+shell:
+	flask --app  manage shell
