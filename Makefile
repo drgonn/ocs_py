@@ -8,4 +8,5 @@ pkg:
 run:
 	flask --app manage run --debug --host 0.0.0.0 --port 38086
 
-
+mycommand:
+	flask --app  manage mycommand
