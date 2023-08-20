@@ -1,0 +1,13 @@
+*.xml
+*.pyc
+
+
+/env/
+/tmp/
+/.idea/
+/__pycache__/
+
+
+
+
+
