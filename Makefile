@@ -13,3 +13,11 @@ mycommand:
 
 shell:
 	flask --app  manage shell
+
+redis:
+	docker exec -it redis_ocs redis-cli
+
+worker:
+	celery -A manage.celery worker --loglevel=info
+beat:
+	celery -A manage.celery beat --loglevel=info

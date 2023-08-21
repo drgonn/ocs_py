@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os
-from app import create_app
+from app import create_app, db , celery
 from app.models import Stock
 from flask.cli import FlaskGroup
 
