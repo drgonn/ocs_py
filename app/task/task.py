@@ -26,4 +26,6 @@ def async_task():
     return 'Async task completed'
 
 
-
+@celery.task
+def scheduled_task():
+    print("1min 打印一次的任务")
